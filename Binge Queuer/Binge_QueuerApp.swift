@@ -1,10 +1,3 @@
-//
-//  Binge_QueuerApp.swift
-//  Binge Queuer
-//
-//  Created by Nathan Wilson on 11/02/2025.
-//
-
 import SwiftUI
 
 @main
