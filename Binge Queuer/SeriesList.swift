@@ -21,6 +21,7 @@ struct SeriesList: View {
                         }
                     }
                     .onDelete(perform: delete)
+                    .onMove(perform: move)
                     
                 }.navigationTitle("Series")
                     .toolbar{ EditButton() }
@@ -30,6 +31,9 @@ struct SeriesList: View {
     
     func delete(at offsets: IndexSet){
         seriesDataList.remove(atOffsets: offsets)
+    }
+    private func move(from source: IndexSet, to destination: Int) {
+        seriesDataList.move(fromOffsets: source, toOffset: destination)
     }
 }
 
