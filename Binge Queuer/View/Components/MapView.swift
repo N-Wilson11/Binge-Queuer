@@ -1,5 +1,3 @@
-// From: https://developer.apple.com/tutorials/swiftui/
-// and   https://developer.apple.com/documentation/mapkit/mapkit_for_swiftui
 import SwiftUI
 import MapKit
 

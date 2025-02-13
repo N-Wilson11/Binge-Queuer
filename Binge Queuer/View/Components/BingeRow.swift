@@ -2,7 +2,7 @@ import SwiftUI
 
 
 struct BingeRow: View {
-    var series:Series
+    var series: Series
     var body: some View{
         NavigationView{
             HStack{
@@ -13,8 +13,6 @@ struct BingeRow: View {
                 
                 
             }
-            NavigationLink(destination: BingeRow(series: series)){
-                BingeRow(series: series) }
         }
         
     }

@@ -1,4 +1,3 @@
-// From: https://developer.apple.com/tutorials/swiftui/
 import SwiftUI
 
 struct CircleImage: View {
