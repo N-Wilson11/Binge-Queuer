@@ -13,8 +13,6 @@ struct SeriesDetail: View {
                 MapView(coordinate: CLLocationCoordinate2DMake(series.latitude, series.longitude))
                     .frame(height: mapHeight)
                 
-                
-                
                 CircleImage(image: Image(series.image)
                     .resizable())
                 .offset(y: -spacerSize)
@@ -45,5 +43,5 @@ struct SeriesDetail: View {
 }
 
 #Preview {
-    SeriesDetail(series: seriesSourceList[4])
+    SeriesDetail(series: seriesSourceList[0])
 }

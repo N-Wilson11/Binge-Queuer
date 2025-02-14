@@ -13,17 +13,16 @@ struct SeriesList: View {
         NavigationView{
             HStack{
                 List(){
-                    ForEach(seriesDataList,id : \Series.id){
+                    ForEach(seriesDataList){
                         series in
                         NavigationLink(destination: SeriesDetail(series: series)){
                             BingeRow(series: series)
-                                .frame(height: 60)
                         }
                     }
                     .onDelete(perform: delete)
                     .onMove(perform: move)
                     
-                }.navigationTitle("Series")
+                }.navigationTitle("Binge Queuer")
                     .toolbar{ EditButton() }
             }
         }
